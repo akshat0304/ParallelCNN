@@ -62,12 +62,12 @@ We will be demonstrating our parallelized application in action and comparing th
 
 **Date** | **Plan to Acheive** | **Status**
 ---------| --------------------| ----------
-**October 30th-November 5th**  |Write Proposal. Find suitable CNN’s to parallelize. Learn PYCUDA and design our basic architecture | 
-**November 6th-November 12th** | Write out CPU implementation and test it taking measurements on appropriate datasets. Try and run some basic things with PYCUDA and take measurements to see if our thing is actually working. | 
-**November 13th-November 19th** |Write out our implementation using PYCUDA. Write Checkpoint Report |
-**November 20th-November 26th** | Write out our implementation using PYCUDA. Make further optimizations |
-**November 27th –December 3rd** | Test our GPU implementation and take measurements |
-**December 3rd-December 9th**  | If all previous tasks are completed, start working on a framework that allows you to define a neural network and train it. After work is completed, test and time the framework. | 
+**October 30th-November 5th**  |Write Proposal. Learn PYCUDA. | 
+**November 6th-November 12th** | Write out serial CPU implementation with 4 convolution/subsampling layers and 2 fully connected layers and test for correctness and timing on MNIST Dataset. | 
+**November 13th-November 19th** |Write naive CUDA functions for the convolution/subsampling layer and the backpropogation algorithm. Write Checkpoint Report |
+**November 20th-November 26th** | Make memory optimizations as detailed in the proposal and implement a circular buffer to hold the backpropogation gradients. |
+**November 27th –December 3rd** | Make memory optimizations as detailed in the proposal and implement a circular buffer to hold the backpropogation gradients.  |
+**December 3rd-December 9th**  | Test our GPU implementation and take measurementsIf all previous tasks are completed, start working on a framework that allows you to define a neural network and train it. After work is completed, test and time the framework. | 
 **December 10th-December 12th** | Write out final report and make presentation poster.
 
 
