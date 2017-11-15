@@ -35,7 +35,7 @@ We have limited memory resources on the GPU hardware -
 
 We perform convolution and subsampling in one step instead of two increasing temporal locality and reduce reloading of memory. 
 
-## To improve locality - 
+#### To improve locality - 
 During the back-propagation step, the loss function (error) is usually “pulled” by lower layers from higher layers. This method does not exploit locality as a weight in the lower level may be affected by different weights in the higher layer. As a result, we will try employ a technique called “pushing” where for each unit in the higher layer, we will update a fixed number of units in the lower layer so that threads will now modify contiguous memory - which is better suited for CUDA architecture. 
 
 We also plan to use a circular buffer in order to get the most out of the extremely limited shared memory. Even if we use the whole 96 KB of shared memory only a fraction of the source feature maps can be loaded. Using a circular buffer that only holds a small region of the feature maps helps us make sure that in each iteration only some of the rows of the buffer need to be exchanged. 
