@@ -1,6 +1,6 @@
 ## Parallelizing Convolutional Neural Networks using NVIDIA's CUDA Architecture
 
-[](checkpoint.md)
+[Checkpoint](checkpoint.md)
 
 
 ### SUMMARY
