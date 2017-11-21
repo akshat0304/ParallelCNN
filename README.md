@@ -1,5 +1,7 @@
 ## Parallelizing Convolutional Neural Networks using NVIDIA's CUDA Architecture
 
+[](checkpoint.md)
+
 
 ### SUMMARY
 We are going to implement a parallel Convolutional Neural Network (CNN) on the NVIDIA CUDA GPU architecture. We are going to start with an existing sequential implementation of a CNN and parallelize both the back and forward propagation phases along with reduce memory footprint and improve memory efficiency to achieve a higher speed up at the cost of the lowest possible accuracy drop.
